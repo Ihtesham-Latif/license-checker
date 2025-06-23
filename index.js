@@ -5,7 +5,7 @@ require('dotenv').config();
 module.exports = async function validateLicense() {
   try {
     const licenseKey = process.env.LICENSE_KEY;
-    const response = await axios.post('https://your-license-api.com/validate', {
+    const response = await axios.post('https://license-api-two.vercel.app/validate', {
       key: licenseKey,
     });
 
